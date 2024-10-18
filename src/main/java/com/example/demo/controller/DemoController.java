@@ -23,13 +23,15 @@ public class DemoController {
     public String getAllTestDBs(Model model) {
         TestDB test = testService.findByName( "홍길동");
         model.addAttribute("data4", test);
+       
+       
         System.out.println("데이터 출력 디버그 : " + test);
         return "testdb";
     }
     // @GetMapping("/article_list")
     // public String article_list() {
     // return "article_list";
-    // }
+    // }4
 
 
 
